@@ -1,0 +1,306 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(26, 25, 25);
+
+}
+
+#container {
+    width: 1075px;
+    height: 599px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCCDEA;
+    
+}
+
+#SmartWatch {
+    width: 366px;
+    height: 470px;
+    background-image: url(assets/Apple\ Watch\ Background.png);
+    
+}
+
+#mask {
+    width: 205px;
+    height: 251px;
+    margin-top: 110.5px;
+    margin-left: 73.5px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+#Navigationbar {
+    
+    width: 205px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 46px;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.text1 {
+    
+    width: 85px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15.5px;
+}
+
+h1 {
+    color: var(--amethyst, #CDA5F8);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.TimeBox {
+   
+    width: 43px;
+    height: 20px;
+    margin-right: 15.5px;
+}
+
+#Carousel {
+    display: flex;
+    width: 201px;
+    height: 108px;
+    background: var(--opal-12, rgba(255, 255, 255, 0.12));
+    border-radius: 25px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.imagZZ {
+    width: 55px;
+    height: 46px;
+    margin-left: 9.5px;
+    margin-top: 8.5px;
+    
+}
+
+.ThreePoint {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 160px;
+    margin-top: 12.5px;
+    background-image: url(assets/Platter.svg);
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.text, .textbox  {
+    width: 173.5px;
+    height: 39px;
+    margin-top: 58.5px;
+    margin-left: -50px;
+}
+
+.text2, .text3{
+
+    width: 173.5px;
+    height: 20px;
+    margin: 0;
+}
+
+.text2 {
+    color: var(--opal, #FFF);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.5px; 
+}
+
+#text3 {
+    color: var(--amethyst, #CDA5F8);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.5px; 
+    margin: 0;
+}
+
+.text5  {
+    color: var(--amethyst, #CDA5F8);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.5px; 
+    margin: 0;
+}
+
+#Carousel1 {
+    
+    display: flex;
+    width: 174px;
+    height: 109px;
+    margin-left: 15.5px;
+    border-radius: 20px;
+    background: var(--opal-12, rgba(255, 255, 255, 0.12));
+    margin-top: 5.5px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.tarde {
+
+    width: 40px;
+    height: 21.442px;
+    margin-left: 19px;
+    margin-top: 21.28px;
+}
+
+.ThreePoint1 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(assets/Platter.svg);
+    margin-left: 133px;
+    margin-top: 13.5px;
+
+}
+
+.textbox {
+    width: 153.5px;
+    height: 39px;
+    margin-top: 72px;
+    margin-left: -44px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text4 {
+    color: var(--opal, #FFF);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.5px; 
+    margin: 0;
+    margin-left: -22px;
+}
+
+#TimeBox {
+    width: 43px;
+    height: 20px;
+    color: var(--opal, #FFF);
+    text-align: right;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.5px; 
+    margin-right: 22px;
+}
+
+
+
+
+/* alerta css*/
+
+.modal {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252425;
+    margin: 5% auto;
+    width: 205px;
+    height: 251px;
+    border-radius: 60px;
+  }
+  
+  .close {
+    
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 140px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1px 1px 1px rgb(12, 12, 12);
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(63, 61, 61);
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  #timeInput {
+    border: none;
+    color: #aaa;
+    background-color: #252425;
+    font-size: 25px;
+    margin-top: 20px;
+    
+  }
+  
+
+  #bt {
+    color: white;
+    border: 1px solid gray;
+    width: auto;
+  }
+
+  #bt:hover {
+    border: 1px solid black;
+    color: #686768;
+    
+  }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristiano franca">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="um app pra alarm sono SmartWach">
+    <title>APP de Sono SmartWatch</title>
+    <link rel="stylesheet" href="./sttyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="alarmModal" class="modal">
+                        <div class="modal-content" >
+                          <span class="close" onclick="toggleModal()">&times;</span>
+                          <h2>Configuração de Alarme</h2>
+                          <label for="timeInput">Time</label>
+                          <input type="time" id="timeInput"><br>
+                          <button  id="bt" onclick="setAlarm()">Submit</button>
+                        </div>
+                      </div>
+        <div id="SmartWatch">
+            <div id="mask">
+                
+                <div id="Navigationbar">
+                    <h1 class="text1">Dreamy</h1>
+                    <div id="TimeBox"></div>
+                </div>
+                <div id="Carousel" onclick="moverRetangulo(this)" >
+                    <div class="imagZZ">
+                        <img src="assets/Carousel Symbol.svg" alt="">
+                    </div>
+                    <div class="ThreePoint">
+                         <button id="openModalBtn" onclick="toggleModal()">
+                            
+                         </button>
+                    </div>
+                    
+                    <div class="text">
+                        <p class="text2">Descanso noturno</p>
+                        <p id="text3">SONO REM - 12/09</p>
+                    </div>
+                </div>
+                <div id="Carousel1" onclick="moverRetangulo(this)" >
+                    <div class="tarde">
+                        <img src="assets/Rede.svg" alt="">
+                    </div>
+                    <div class="ThreePoint1">
+                        <button type="submit" name="menu2"></button>
+                    </div>
+                    <div class="textbox">
+                        <p class="text4">Soneca à tarde</p>
+                        <p class="text5">SONO REM - 12/09</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+    <!--Desafio comecado dia 13/09/2023, terminei hoje 18/09/2023 usando um
+         pouco mais de Java script mesmo noa estando perfeito ainda, os desafios 
+         ajudam bastante-->
+</body>
+</html>   
+                
